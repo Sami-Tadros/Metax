@@ -1,0 +1,106 @@
+.footer {
+    background-color: #111111;
+    padding: 2rem 0;
+}
+
+.tfooter-logo img {
+    width: 215px;
+    height: 50px;
+}
+
+.tfooter-logo p {
+    color: white;
+    font-size: 14px;
+    margin-top: 1rem;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.tfooter-list h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.tfooter-list ul,
+ul.tfooter-social {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+ul.tfooter-social {
+    display: flex;
+    gap: 10px;
+}
+
+.tfooter-list ul li {
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.tfoot-col {
+    display: flex;
+    align-items: center;
+}
+
+.tfooter-logo ul.tfooter-social>li>a>img {
+    width: 20px;
+    height: 20px;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.top-footer {
+    padding-bottom: 30px;
+}
+
+.bottom-footer {
+    border-top: 1px solid #505050;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1rem;
+    color: #c9c7c7;
+    letter-spacing: 1px;
+}
+
+.tfooter-logo ul.tfooter-social>li>a>img:hover {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(88%) saturate(6539%) hue-rotate(115deg) brightness(89%) contrast(93%);
+}
+
+.tfooter-list ul li>a {
+    background-image: linear-gradient(to right,
+            #14DCDC,
+            #14DCDC 50%,
+            white 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+.tfooter-list ul li>a:before {
+    content: '';
+    background: #14DCDC;
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: all 0.3s ease-in-out;
+}
+.tfooter-list ul li>a:hover {
+    background-position: 0;
+}
+.tfooter-list ul li>a:hover::before {
+    width: 100%;
+}
